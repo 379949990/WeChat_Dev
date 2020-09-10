@@ -1,0 +1,13 @@
+<!--components/prolist/prolist.wxml-->
+
+<view class="prolist">
+  <navigator url="{{'/pages/detail/detail?proid=' + item.proid}}" class="proitem" wx:for="{{prolist}}" wx:key="index">
+    <view class="itemimg">
+      <image src="{{item.proimg}}" class="image"/>
+    </view>
+    <view class="iteminfo">
+      <view class="van-multi-ellipsis--l2">{{ item.proname }}</view>
+      <view class="p">￥{{ item.price }}</view>
+    </view>
+  </navigator>
+</view>

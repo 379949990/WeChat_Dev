@@ -1,0 +1,16 @@
+/* pages/home/home.wxss */
+image {width: 100%}
+.bottomPrompt {
+  text-align: center;
+  display: block;
+  margin: 20px 0;
+}
+.backtop {
+  width: 36px;
+  height: 36px;
+  background-color: #fff;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  border-radius: 50%;
+}

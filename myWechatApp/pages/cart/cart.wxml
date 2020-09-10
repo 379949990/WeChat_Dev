@@ -1,0 +1,3 @@
+<!--pages/cart/cart.wxml-->
+<view>pages/cart/cart.wxml</view>
+<cart cartlist="{{cartlist}}"></cart>

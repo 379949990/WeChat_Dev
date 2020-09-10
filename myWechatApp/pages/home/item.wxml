@@ -1,0 +1,13 @@
+<template name="student">
+  <view>
+    <view>
+      姓名： {{ name }}
+    </view>
+    <view>
+      电话 {{ tel }}
+    </view>
+    <view>
+      年龄 {{ age }}
+    </view>
+  </view>
+</template>
