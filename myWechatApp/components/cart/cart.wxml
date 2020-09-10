@@ -1,9 +1,8 @@
 <!--components/cart/cart.wxml-->
 
 <view class="cartlist">
-  二七二七二
-  <view wx:if="{{cartlist}} = []">什么都没有!</view>
-  <view wx:if="{{cartlist}} != []">
+  <view wx:if="{{!cartlist}}">什么都没有!</view>
+  <view wx:else>
     <van-card  wx:for="{{cartlist}}" wx:key="index" num="2" tag="标签" price="10.00" desc="描述信息" title="商品标题" thumb="{{ imageURL }}">
       <view slot="footer">
         <van-button size="mini">按钮</van-button>
