@@ -1,5 +1,5 @@
 // pages/cart/cart.js
-// import { getCartlist } from './../../api/api.js'
+import { getCartlist } from './../../api/api.js'
 
 
 Page({
@@ -33,6 +33,12 @@ Page({
    */
   onLoad: function (options) {
     console.log(123)
+    getCartlist().then((res) => {
+      // console.log(res)
+      // this.setData({
+      //   bannerlist: res.data.data
+      // })
+    })
     this.setData({
       cartlist: [
         { 

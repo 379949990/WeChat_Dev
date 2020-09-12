@@ -1,2 +1,9 @@
 <!--pages/user/user.wxml-->
-<text>pages/user/user.wxml</text>
+<view class="userpageKey">
+  <navigator url="{{'/pages/register/register'}}">
+    <van-button round type="info" bindtap="toRegister">注册</van-button>
+  </navigator>
+  <navigator url="{{'/pages/login/login'}}">
+    <van-button round type="info" bindtap="toLogin">登录</van-button>
+  </navigator>
+</view>
